@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginVertical="10dp"
+    android:background="@drawable/border"> <!-- Apply the border drawable here -->
+
+    <!-- Image on the left -->
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/image_view_wine"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/image1"
+        android:layout_marginEnd="8dp"/> <!-- Sample image reference -->
+
+    <!-- Center layout with wine details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/text_view_wine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wine Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="4dp"/> <!-- Bold wine name -->
+
+        <TextView
+            android:id="@+id/text_view_wine_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wine Description"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:paddingBottom="4dp"/> <!-- Lighter color for description -->
+
+        <TextView
+            android:id="@+id/text_view_original_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Original Price"
+            android:textSize="14sp"
+            android:textColor="#000000"
+          /> <!-- Original Price with strikethrough -->
+
+        <TextView
+            android:id="@+id/text_view_discounted_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discounted Price"
+            android:textSize="14sp"
+            android:textColor="#FF0000"/> <!-- Discounted Price in red color -->
+    </LinearLayout>
+
+    <!-- Right layout with buttons and stock status -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="end|center_vertical">
+
+        <ImageView
+            android:id="@+id/button_add_to_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:src="@drawable/ic_addtocart"
+            android:clickable="true"
+            android:layout_marginBottom="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/button_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite2"/>
+
+        <TextView
+            android:id="@+id/text_view_stock_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Stock"
+            android:textSize="14sp"
+            android:textColor="#EF233C"
+
+            android:layout_gravity="center_vertical"/> <!-- Stock status -->
+    </LinearLayout>
+</LinearLayout>

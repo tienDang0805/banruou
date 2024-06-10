@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Thông Tin cá Nhân"
+        app:titleTextColor="@android:color/white" />
+
+
+    <!-- Avatar -->
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/avatar_trang"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Người Dùng"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"/>
+    <!-- Button: Đơn hàng của tôi -->
+    <LinearLayout
+
+        android:id="@+id/llOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/bg_white_border_black"
+        android:layout_marginVertical="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_order"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đơn hàng của tôi"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/ivArrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_gravity="end|center_vertical"/>
+
+    </LinearLayout>
+
+    <!-- Button: Thông tin cá nhân -->
+    <LinearLayout
+        android:id="@+id/llPersonalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/bg_white_border_black"
+        android:layout_marginVertical="10dp"
+        android:padding="10dp">
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_personal_info"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thông tin cá nhân"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/ivArrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_gravity="end|center_vertical"/>
+
+    </LinearLayout>
+
+    <!-- Button: Thanh toán -->
+    <LinearLayout
+        android:id="@+id/llPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/bg_white_border_black"
+        android:layout_marginVertical="10dp"
+        android:padding="10dp">
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_payment"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thanh toán"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/ivArrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_gravity="end|center_vertical"/>
+
+    </LinearLayout>
+
+    <!-- Button: Help -->
+    <LinearLayout
+        android:id="@+id/llHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/bg_white_border_black"
+        android:layout_marginVertical="10dp"
+        android:padding="10dp">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_help"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Help"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/ivArrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_gravity="end|center_vertical"/>
+
+    </LinearLayout>
+
+    <!-- Button: Support -->
+    <LinearLayout
+        android:id="@+id/llSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/bg_white_border_black"
+        android:layout_marginVertical="10dp"
+        android:padding="10dp">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_support"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Support"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/ivArrow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_gravity="end|center_vertical"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/bg_white_border_black"
+        android:layout_marginVertical="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logout"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đăng Xuất"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/ivArrow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_gravity="end|center_vertical"/>
+
+    </LinearLayout>
+</LinearLayout>

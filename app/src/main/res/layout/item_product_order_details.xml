@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginVertical="10dp"
+    android:background="@drawable/border">
+
+    <!-- Image on the left -->
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/image_view_wine"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/image1"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Center layout with wine details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text_view_wine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wine Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/text_view_wine_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/text_view_wine_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="14sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <!-- Right layout with quantity and total price -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/text_view_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/text_view_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Total Price"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

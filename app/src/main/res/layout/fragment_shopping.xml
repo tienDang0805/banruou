@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar with title -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:title="Shopping"
+            app:titleTextColor="@android:color/white" />
+
+        <!-- Search bar -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search wine"
+            app:iconifiedByDefault="false"
+            app:searchIcon="@drawable/ic_search"
+            app:closeIcon="@drawable/ic_close"
+            app:queryBackground="@android:color/white"
+            app:hintTextColor="@android:color/darker_gray"
+            app:searchHintIcon="@drawable/ic_search_hint"
+            app:defaultQueryHint="Search wine"
+            android:background="@drawable/search_view_bg"
+            android:padding="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+        <!-- ImageView for poster -->
+
+        <!-- Explore Categories and See more -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Explore Categories"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See more"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/categoriesLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+        <!-- RecyclerView for wine list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listWire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            android:paddingBottom="80dp"
+            android:clipToPadding="false" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
